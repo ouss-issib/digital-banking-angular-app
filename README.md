@@ -1,59 +1,45 @@
-# DigitalBankingApp
+# 💻 Digital Banking App – Angular Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+Ce dépôt contient une application frontend simple réalisée avec **Angular**, conçue pour interagir avec un backend Spring Boot dans le cadre d’une activité pratique. Elle met en œuvre une interface basique pour la **gestion des produits**.Cette activité est inspirée de la dernière séance de cours et des vidéos fournies comme ressources.Ce TP fait partie du cours de Java JEE dirigé par Mr YOUSSFI Mohamed.
 
-## Development server
 
-To start a local development server, run:
+## 🎯 Objectif
 
-```bash
-ng serve
-```
+Développer une application web simple permettant :
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- L'affichage d'une page d’accueil.
+- La visualisation dynamique d’une liste de produits fournie par une API REST Spring Boot.
 
-## Code scaffolding
+## 🧱 Structure de l’application
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🔹 Frontend Angular
 
-```bash
-ng generate component component-name
-```
+- **Home** : Page d’accueil avec un contenu statique.
+- **Products** : Page affichant une liste de produits récupérés depuis le backend via `HttpClient`.
+- **Routing** : Navigation simple entre `/home` et `/products`.
+- **Service** : Appels REST au backend (`GET /products`).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🔹 Backend Spring Boot (à héberger séparément)
 
-```bash
-ng generate --help
-```
+- Fournit une API REST pour la liste des produits.
+- Exemple d’endpoint : `http://localhost:8181/products`
+- Autorise les requêtes CORS pour permettre les appels depuis Angular.
 
-## Building
 
-To build the project run:
+### Captures d'écran
 
-```bash
-ng build
-```
+| Home Page | Products Page | Avant Suppression | Après Suppression |
+|---|---|---|---|
+| ![](./screenshots/home.png)! | [](./screenshots/products.png) | [](./screenshots/beforeDelete.png) | [](./screenshots/afterDelete.png) |
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🚀 Lancement de l’application
 
-```bash
-ng test
-```
+### 1. Lancer le backend
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Assurez-vous que le backend est lancé (Spring Boot) sur le port 8080 :
 
 ```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+cd digital-banking-backend
+mvn spring-boot:run
