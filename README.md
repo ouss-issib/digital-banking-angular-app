@@ -30,7 +30,7 @@ Développer une application web simple permettant :
 
 | Home Page | Products Page | Avant Suppression | Après Suppression |
 |---|---|---|---|
-| ![](./screenshots/home.png)! | [](./screenshots/products.png) | [](./screenshots/beforeDelete.png) | [](./screenshots/afterDelete.png) |
+| ![](./screenshots/home.png) | ![](./screenshots/produtcs.png) | ![](./screenshots/beforeDelete.png) | ![](./screenshots/afterDelete.png) |
 
 
 
