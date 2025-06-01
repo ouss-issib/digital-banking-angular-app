@@ -36,10 +36,17 @@ Développer une application web simple permettant :
 
 ## 🚀 Lancement de l’application
 
-### 1. Lancer le backend
 
-Assurez-vous que le backend est lancé (Spring Boot) sur le port 8080 :
+## Instructions d'Exécution
+1. **Cloner le dépôt** :
+   ```bash
+   git clone https://github.com/ouss-issib/digital-banking-angular-app
+   
+2. Naviguer dans le répertoire du dépôt :
+   ```bash
+   cd digital-banking-angular-app
 
-```bash
-cd digital-banking-backend
-mvn spring-boot:run
+3. Compiler et exécuter les fichiers Java :
+   ```bash
+    npm install
+    npm run start
